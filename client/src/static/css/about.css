@@ -1,0 +1,26 @@
+.bm-about h2 {
+	text-align: center;
+	margin-top: 30px;
+    font-size: 40px;
+}
+
+.bm-about p {
+    margin: 0 0 20px 0;
+    line-height: normal;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: justify;
+}
+
+.bm-about .wrapper {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.bm-about span {
+	color: crimson;
+	font-weight: bolder;
+}

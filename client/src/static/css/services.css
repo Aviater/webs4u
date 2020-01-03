@@ -1,0 +1,47 @@
+.bm-services .wrapper {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+
+.bm-services .row {
+	margin-bottom: 50px;
+}
+
+.bm-services .row .col-sm-3 {
+	padding: 0;
+}
+
+.bm-services h2 {
+	text-align: center;
+	margin-top: 30px;
+    font-size: 40px;
+}
+
+.bm-services h3 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.bm-services span {
+	color: crimson;
+	font-weight: bolder;
+}
+
+.bm-services img {
+	vertical-align: top;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+
+.bm-services p {
+	margin: 0;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 20px;
+}

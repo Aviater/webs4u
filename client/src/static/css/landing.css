@@ -1,0 +1,33 @@
+body {
+	background-color: rgb(31, 31, 31) !important;
+	font-family: Arial !important;
+}
+
+.bm-landing div {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.bm-landing h1 {
+	color: white;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.bm-landing h1 span {
+	color: crimson;
+}
+
+.bm-landing button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
