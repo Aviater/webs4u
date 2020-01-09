@@ -24,3 +24,13 @@
 	color: crimson;
 	font-weight: bolder;
 }
+
+@media screen and (max-width: 750px) {
+    .bm-about h2 {
+        font-size: 32px;
+    }
+
+	.bm-about p {
+		font-size: 3.8vmin;
+	}
+}

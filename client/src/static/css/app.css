@@ -146,3 +146,50 @@ body {
   z-index: 1;
   position: absolute;
 }
+
+@media screen and (max-width: 650px) {
+  .switch {
+    width: 320px;
+    
+  }
+
+  .switch:before {
+    height: 2rem;
+  }
+
+  .switch label {
+    padding: 0.4rem 0.3rem;
+    font-size: 12px;
+  }
+
+  .switch__indicator {
+    height: 2.5rem;
+    width: 2.5rem;
+    top: -0.25rem;
+  }
+
+  .switch input#one:checked ~ .switch__indicator {
+    background: PaleGreen;
+    transform: translate3d(1.4rem, 0, 0);
+  }
+  .switch input#two:checked ~ .switch__indicator {
+    background: MediumTurquoise;
+    transform: translate3d(4.4rem, 0, 0);
+  }
+  .switch input#three:checked ~ .switch__indicator {
+    background: PaleVioletRed;
+    transform: translate3d(7rem, 0, 0);
+  }
+  .switch input#four:checked ~ .switch__indicator {
+    background: PaleGreen;
+    transform: translate3d(10rem, 0, 0);
+  }
+  .switch input#five:checked ~ .switch__indicator {
+    background: MediumTurquoise;
+    transform: translate3d(14.2rem, 0, 0);
+  }
+  .switch input#six:checked ~ .switch__indicator {
+    background: PaleVioletRed;
+    transform: translate3d(18.1rem, 0, 0);
+  }
+}

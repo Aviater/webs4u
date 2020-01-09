@@ -65,7 +65,7 @@ class App extends Component {
             <label htmlFor="four" className="switch__label" >Services</label>
             <input id="four" type="radio" name="rotate-cube-side" value="back" />
             <label htmlFor="five" className="switch__label" >Testimonials</label>
-            <input disabled data-toggle="tooltip" data-placement="top" title="Coming soon!" id="five" type="radio" name="rotate-cube-side" value="top" />
+            <input data-toggle="tooltip" data-placement="top" title="Coming soon!" id="five" type="radio" name="rotate-cube-side" value="top" />
             <label htmlFor="six" className="switch__label" >Contact</label>
             <input id="six" type="radio" name="rotate-cube-side" value="bottom" />
             <div className="switch__indicator"></div>

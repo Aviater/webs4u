@@ -28,3 +28,9 @@
 .bm-contact form button {
 	width: 30%;
 }
+
+@media screen and (max-width: 650px) {
+    .bm-contact h2 {
+        font-size: 32px;
+    }
+}
