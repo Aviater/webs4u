@@ -2,6 +2,7 @@
   "name": "ecficio-server",
   "version": "1.0.0",
   "description": "Back-end for the Ecficio application",
+  "homepage": "https://ecficio.herokuapp.com/",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
