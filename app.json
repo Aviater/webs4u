@@ -1,8 +1,8 @@
 {
-	"name": "Webs4u",
-	"description": "Webs4u web application",
-	"repository": "",
+	"name": "Ecficio",
+	"description": "Ecficio web application",
+	"repository": "https://github.com/Aviater/webs4u",
 	"logo": "https://i.ibb.co/0nnG12m/alphaquants-logo.png",
-	"keywords": ["webs4u"],
+	"keywords": ["ecficio", "web development", "web design", "seo"],
 	"image": "heroku/nodejs"
 }

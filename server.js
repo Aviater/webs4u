@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-
+/*
 // Mail
 var transport = {
     host: 'smtp.mailgun.org',
@@ -59,7 +59,7 @@ router.post('/', (req, res, next) => {
     }
   })
 })
-
+*/
 // THIS NEEDS TO BE THE LAST FUNCTION IN THE FILE
 if(process.env.NODE_ENV === 'production') {
 	// Set static folder
