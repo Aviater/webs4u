@@ -162,12 +162,13 @@ body {
   }
 
   .switch:before {
-    height: 2rem;
+    height: 1.8rem;
   }
 
   .switch label {
-    padding: 0.4rem 0.3rem;
-    font-size: 12px;
+    padding: 0.4rem 0.5rem;
+    font-size: 10px;
+    margin: 0;
   }
 
   .switch__indicator {

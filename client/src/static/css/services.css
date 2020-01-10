@@ -61,6 +61,10 @@
 	.bm-services .wrapper {
 		width: 90%;
 	}
+
+	.bm-services .col-sm-3 {
+		padding: 10px !important;
+	}
 }
 
 @media screen and (max-width: 750px) {
