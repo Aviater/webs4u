@@ -32,9 +32,17 @@
 }
 
 @media screen and (max-width: 750px) {
+    .container {
+        margin: unset;
+    }
+
     .bm-about {
         position: absolute;
         padding: 0;
+    }
+
+    .bm-about .wrapper {
+        width: 90%;
     }
 
     .bm-about h2 {
