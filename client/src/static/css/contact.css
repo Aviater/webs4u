@@ -47,3 +47,16 @@
         font-size: 32px;
     }
 }
+
+@media screen and (max-width: 550px) {
+	.form-control {
+		padding: 0;
+		padding-left: 5px;
+		font-size: unset;
+    }
+    
+    .bm-contact form {
+        width: unset;
+        left: 49%;
+    }
+}
