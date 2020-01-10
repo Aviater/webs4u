@@ -3,11 +3,16 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: hidden !important;
   background-color: rgb(31, 31, 31);
 }
 
-
+.site-wrapper {
+  overflow: hidden !important;
+  box-sizing: content-box !important;
+  height: 100vh;
+  width: 100vw;
+}
 
 /* Radio buttons */
 .switch {

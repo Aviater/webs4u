@@ -12,10 +12,9 @@ body {
 .bm-landing div {
 	height: 100%;
 	width: 100%;
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
 }
 
 .bm-landing h1 {
@@ -24,11 +23,17 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 70px;
-    font-weight: bolder;
+	font-weight: bolder;
+	z-index: 1;
 }
 
 .bm-landing h1 span {
 	color: crimson;
+}
+
+.bm-landing canvas {
+	height: 100vh !important;
+	width: 100vw !important;
 }
 
 .bm-landing button {
