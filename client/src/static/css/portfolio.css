@@ -1,4 +1,8 @@
-
+.bm-portfolio {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
 .bm-portfolio h2 {
 	text-align: center;
 	padding-top: 30px;
@@ -51,6 +55,10 @@
 }
 
 @media screen and (max-width: 750px) {
+	.bm-portfolio {
+		position: absolute;
+	}
+
 	.bm-portfolio h2 {
 		font-size: 32px;
 	}

@@ -1,3 +1,9 @@
+.bm-contact {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
 .bm-contact h2 {
 	text-align: center;
 	margin-top: 30px;
@@ -27,6 +33,13 @@
 
 .bm-contact form button {
 	width: 30%;
+}
+
+@media screen and (max-width: 950px) {
+    .bm-contact {
+        position: absolute;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
