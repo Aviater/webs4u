@@ -4,6 +4,19 @@ import '../../static/css/landing.css';
 
 class Landing extends Component {
 
+  componentDidMount() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  detectViewport() {
+    if(window.innerWidth > 700) {
+      return 120
+    } else {
+      return 60
+    }
+  }
+
   render() {
     return (
       <div className="bm-landing container">
@@ -13,7 +26,7 @@ class Landing extends Component {
             params={{
               "particles": {
                 "number": {
-                  "value": 120
+                  "value": this.detectViewport()
                 },
                 "size": {
                   "value": 0
