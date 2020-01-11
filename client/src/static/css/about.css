@@ -6,7 +6,7 @@
 
 .bm-about h2 {
 	text-align: center;
-	margin-top: 30px;
+	padding-top: 30px;
     font-size: 40px;
 }
 
@@ -47,9 +47,10 @@
 
     .bm-about h2 {
         font-size: 32px;
+        padding-top: 10px;
     }
 
 	.bm-about p {
-		font-size: 3.8vmin;
+        font-size: 3.8vmin;
 	}
 }

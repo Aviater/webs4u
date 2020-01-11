@@ -92,7 +92,8 @@
 	  }
 
     .bm-services h2 {
-        font-size: 32px;
+		font-size: 32px;
+		padding-top: 10px;
     }
 
 	.bm-services p {
