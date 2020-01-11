@@ -67,15 +67,15 @@ body {
   transform: translate3d(11.5rem, 0, 0);
 }
 .switch input#four:checked ~ .switch__indicator {
-  background: PaleGreen;
+  background: orangered;
   transform: translate3d(16.9rem, 0, 0);
 }
 .switch input#five:checked ~ .switch__indicator {
-  background: MediumTurquoise;
+  background: goldenrod;
   transform: translate3d(23.6rem, 0, 0);
 }
 .switch input#six:checked ~ .switch__indicator {
-  background: PaleVioletRed;
+  background: slategray;
   transform: translate3d(30rem, 0, 0);
 }
 .switch input[type="radio"]:not(:checked), .switch input[type="radio"]:checked {
@@ -174,7 +174,7 @@ body {
   .switch__indicator {
     height: 2.5rem;
     width: 2.5rem;
-    top: -0.25rem;
+    top: -0.35rem;
   }
 
   .switch input#one:checked ~ .switch__indicator {
@@ -190,15 +190,15 @@ body {
     transform: translate3d(7rem, 0, 0);
   }
   .switch input#four:checked ~ .switch__indicator {
-    background: PaleGreen;
+    background: orangered;
     transform: translate3d(10rem, 0, 0);
   }
   .switch input#five:checked ~ .switch__indicator {
-    background: MediumTurquoise;
-    transform: translate3d(14.2rem, 0, 0);
+    background: goldenrod;
+    transform: translate3d(14rem, 0, 0);
   }
   .switch input#six:checked ~ .switch__indicator {
-    background: PaleVioletRed;
-    transform: translate3d(18.1rem, 0, 0);
+    background: slategray;
+    transform: translate3d(17.8rem, 0, 0);
   }
 }

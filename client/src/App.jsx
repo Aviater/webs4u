@@ -8,6 +8,7 @@ import Landing from './components/landing/Landing';
 import About from './components/about/About';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
+import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 
 class App extends Component {
@@ -49,7 +50,9 @@ class App extends Component {
           <div className="cube__face cube__face--left">
             <Portfolio />
           </div>
-          <div className="cube__face cube__face--top">top</div>
+          <div className="cube__face cube__face--top">
+            <Testimonials />
+          </div>
           <div className="cube__face cube__face--bottom">
             <Contact />
           </div>

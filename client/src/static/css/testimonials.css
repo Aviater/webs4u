@@ -1,0 +1,95 @@
+.bm-testimonials {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.bm-testimonials h2 {
+	text-align: center;
+	padding-top: 30px;
+    font-size: 40px;
+}
+
+.bm-testimonials span {
+	color: crimson;
+	font-weight: bolder;
+}
+
+.bm-testimonials p {
+	margin: 0;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 20px 30px;
+    width: 45%;
+    text-align: left;
+    clear: right;
+}
+
+.bm-testimonials p:nth-of-type(even) {
+    float: right;
+}
+
+.bm-testimonials p:last-of-type {
+    padding-bottom: 0
+}
+
+.bm-testimonials p span {
+    font-style: italic;
+    float: right;
+    padding-top: 10px;
+}
+
+.bm-testimonials .wrapper {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .bm-testimonials {
+        padding: 0;
+        display: block;
+    }
+
+    .bm-testimonials p {
+        width: 100%;
+        clear: unset !important;
+        float: left !important;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bm-testimonials .wrapper {
+        margin-left: 30px;
+    }
+
+    .bm-testimonials p {
+        text-align: justify;
+        width: 86%;
+    }
+}
+
+@media screen and (max-height: 800px) and (max-width: 550px) {
+    .bm-testimonials {
+        width: 90vw;
+        margin-left: 15px;
+    }
+
+    .bm-testimonials .wrapper {
+        overflow-y: scroll;
+        height: 65vh;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .bm-testimonials p {
+        font-size: 12px;
+        padding-right: 0;
+        width: 95%; 
+    }
+}
