@@ -180,26 +180,26 @@ body {
 
   .switch input#one:checked ~ .switch__indicator {
     background: PaleGreen;
-    transform: translate3d(1.4rem, 0, 0);
+    transform: translate3d(1.5rem, 0, 0);
   }
   .switch input#two:checked ~ .switch__indicator {
     background: MediumTurquoise;
-    transform: translate3d(4.4rem, 0, 0);
+    transform: translate3d(4.6rem, 0, 0);
   }
   .switch input#three:checked ~ .switch__indicator {
     background: PaleVioletRed;
-    transform: translate3d(7rem, 0, 0);
+    transform: translate3d(7.2rem, 0, 0);
   }
   .switch input#four:checked ~ .switch__indicator {
     background: orangered;
-    transform: translate3d(10rem, 0, 0);
+    transform: translate3d(10.2rem, 0, 0);
   }
   .switch input#five:checked ~ .switch__indicator {
     background: goldenrod;
-    transform: translate3d(14rem, 0, 0);
+    transform: translate3d(14.2rem, 0, 0);
   }
   .switch input#six:checked ~ .switch__indicator {
     background: slategray;
-    transform: translate3d(17.8rem, 0, 0);
+    transform: translate3d(18rem, 0, 0);
   }
 }
