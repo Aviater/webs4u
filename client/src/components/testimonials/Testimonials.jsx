@@ -26,7 +26,7 @@ class Testimonials extends Component {
                 Ecficio put together a very artistic and creative colourful website to promote my work.
                 Bringing new ideas to the table, the developer explained clearly how certain size photos and colours
                 would play a huge part in my work being viewed. Communication was exceptionally outstanding proving
-                the developers and designers can work under pressuer for the deadline I gave.
+                the developers and designers can work under pressure for the deadline I gave.
                 <br/>
                 <span>Simone, Simone Catania Hair &amp; Makeup</span>
             </p>
