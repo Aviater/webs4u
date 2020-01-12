@@ -9,12 +9,14 @@ class Contact extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.sendMsg = this.sendMsg.bind(this);
 
     this.state = {
         name: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        success: '',
       }
   }
 
@@ -22,6 +24,23 @@ class Contact extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+  }
+
+  sendMsg = () => {
+    let success = this.state.success;
+    if(success) {
+      return(
+        <div className="alert alert-success" role="alert">
+          Sent - We will reply as quick as possible.
+        </div>
+      )
+    } else if(success === 'false') {
+      return (
+        <div className="alert alert-danger" role="alert">
+          Oops - Something went wrong.
+        </div>
+      )
+    }
   }
 
   async handleSubmit(e) {
@@ -35,16 +54,27 @@ class Contact extends Component {
       email,
       phone,
       message
-    });
+    })
+    .then(
+      this.setState({
+        success: true
+      }),
+      console.log(this.state)
+    )
+    .catch((err) => {
+      this.setState({
+        success: 'false'
+      }),
+      console.log(this.state)
+    })
   }
-  
 
   render() {
     return (
       <div className="bm-contact container">
         <h2>Request a<br/> <span>Free</span> Quote</h2>
         <div className="wrapper">
-          
+          {this.sendMsg()}
           <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>

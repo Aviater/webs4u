@@ -46,6 +46,13 @@
     color: crimson;
 }
 
+.bm-contact .alert {
+    z-index: 1;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
 @media screen and (max-width: 950px) {
     .bm-contact {
         position: absolute;
