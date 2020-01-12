@@ -35,6 +35,17 @@
 	width: 30%;
 }
 
+.bm-contact form p {
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+.bm-contact form p a {
+    text-decoration: none;
+    color: crimson;
+}
+
 @media screen and (max-width: 950px) {
     .bm-contact {
         position: absolute;
@@ -65,4 +76,8 @@
         left: 49%;
     }
 
+    .bm-contact form p {
+        padding-top: 10px;
+        font-size: unset;
+    }
 }

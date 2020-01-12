@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require('path');
-const creds = require('./config');
 
 require('dotenv').config();
 
@@ -11,55 +11,65 @@ const app = express();
 
 // Middleware and Cors
 app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use('/', router);
-/*
-// Mail
-var transport = {
-    host: 'smtp.mailgun.org',
+
+app.post('/api/form', (req, res) => {
+  
+  var name = req.body.name;
+  var email = req.body.email;
+  var phone = req.body.phone;
+  var message = req.body.message;
+
+  // Email Styling
+  const htmlEmail = `
+    <h3>Contact Details</h3>
+    <ul style="list-style:none">
+      <li>Name: ${name}</li>
+      <li>Email: ${email}</li>
+      <li>Phone: ${phone}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${message}</p>
+  `
+
+  // Mail Authentication
+  var transporter = nodemailer.createTransport({
+    host: 'smtp.sendgrid.net',
     port: 587,
     auth: {
-    user: creds.USER,
-    pass: creds.PASS
-  }
-}
+      user: process.env.USER,
+      pass: process.env.PASS
+    }
+  })
 
-var transporter = nodemailer.createTransport(transport)
-
-transporter.verify((error, success) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Server is ready to take messages');
-  }
-});
-
-router.post('/', (req, res, next) => {
-  var name = req.body.name
-  var email = req.body.email
-  var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${message} `
+  transporter.verify((error, success) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Server is ready to take messages');
+    }
+  })
 
   var mail = {
-    from: name,
-    to: 'RECEIVING_EMAIL_ADDRESS_GOES_HERE',  // Change to email address that you want to receive messages on
-    subject: 'New Message from Contact Form',
-    text: content
+    from: email,
+    to: process.env.MY_MAIL,
+    subject:`Message From ${name} Through Ecficio Contact Form`,
+    text: message,
+    html: htmlEmail
   }
 
   transporter.sendMail(mail, (err, data) => {
     if (err) {
-      res.json({
-        status: 'fail'
-      })
+      return console.log(err);
     } else {
-      res.json({
-       status: 'success'
-      })
+      console.log('Message sent!');
     }
   })
 })
-*/
+
 // THIS NEEDS TO BE THE LAST FUNCTION IN THE FILE
 if(process.env.NODE_ENV === 'production') {
 	// Set static folder
