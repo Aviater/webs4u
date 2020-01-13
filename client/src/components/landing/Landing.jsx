@@ -9,6 +9,7 @@ class Landing extends Component {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
+  // Viewport detection for particle numbers.
   detectViewport() {
     if(window.innerWidth > 700) {
       return 120
