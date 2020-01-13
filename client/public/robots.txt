@@ -1,2 +1,2 @@
-# https://www.robotstxt.org/robotstxt.html
+Sitemap: http://www.ecficio.com/sitemap.xml
 User-agent: *
