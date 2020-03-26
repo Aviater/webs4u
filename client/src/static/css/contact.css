@@ -88,3 +88,21 @@
         font-size: unset;
     }
 }
+
+@media screen and (max-height: 760px) {
+    .bm-contact h2 {
+        padding-top: 0;
+    }
+
+    .bm-contact form {
+        font-size: 12px;
+    }
+
+    .bm-contact form .form-group {
+        margin-bottom: 0.2rem;
+    }
+
+    .bm-contact form .form-group .form-control {
+        font-size: 0.5rem;
+    }
+}

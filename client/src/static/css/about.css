@@ -54,3 +54,9 @@
         font-size: 3.8vmin;
 	}
 }
+
+@media screen and (max-height: 560px) {
+    .bm-about p {
+        font-size: 20px;
+    }
+}

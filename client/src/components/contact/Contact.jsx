@@ -84,7 +84,6 @@ class Contact extends Component {
               type="text"
               className="form-control" 
               id="input-name" 
-              placeholder="John Doe"
               onChange={this.handleChange}
             />
           </div>
@@ -96,7 +95,6 @@ class Contact extends Component {
               type="email"
               className="form-control" 
               id="input-email" 
-              placeholder="name@example.com"
               onChange={this.handleChange}
             />
           </div>
@@ -107,7 +105,6 @@ class Contact extends Component {
               type="text"
               className="form-control" 
               id="input-phone" 
-              placeholder="(+00) 000 000 000"
               onChange={this.handleChange}
             />
           </div>

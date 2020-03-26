@@ -82,6 +82,15 @@
     }
 }
 
+@media screen and (max-height: 750px) {
+    .bm-testimonials .wrapper p {
+        font-size: 12px;
+    }
+    .bm-testimonials h2 {
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-height: 800px) and (max-width: 550px) {
     .bm-testimonials {
         width: 90vw;

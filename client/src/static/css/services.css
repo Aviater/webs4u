@@ -114,3 +114,17 @@
 		overflow-y: scroll;
 	}
 }
+
+@media screen and (max-height: 650px) {
+	.bm-services h2 {
+		padding-top: 0;
+	}
+
+	.bm-services p {
+		font-size: 12px;
+	}
+
+	.bm-services img {
+		height: 30px;
+	}
+}
